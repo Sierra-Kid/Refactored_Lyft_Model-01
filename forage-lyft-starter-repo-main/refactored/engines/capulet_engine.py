@@ -1,0 +1,27 @@
+# from abc import ABC
+
+# from car import Car
+
+
+# class CapuletEngine(Car, ABC):
+#     def __init__(self, last_service_date, current_mileage, last_service_mileage):
+#         super().__init__(last_service_date)
+#         self.current_mileage = current_mileage
+#         self.last_service_mileage = last_service_mileage
+
+#     def engine_should_be_serviced(self):
+#         return self.current_mileage - self.last_service_mileage > 30000
+
+from typing import List
+from models import Car
+
+class CapuletEngine:
+    def __init__(self):
+        pass
+
+    def get_cars(self) -> List[Car]:
+        return [
+            Car(name="Toyota", model="Camry", year=2020),
+            Car(name="Honda", model="Civic", year=2019),
+            Car(name="Ford", model="Mustang", year=2018),
+        ]
